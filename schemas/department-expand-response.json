@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "creationDate": {
+      "type": "string"
+    },
+    "departmentHead": {
+      "type": "string"
+    },
+    "employees": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "empId": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "empId",
+            "name"
+          ]
+        }
+      ]
+    },
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "creationDate",
+    "departmentHead",
+    "employees",
+    "id",
+    "name"
+  ]
+}

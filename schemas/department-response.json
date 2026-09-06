@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "creationDate": {
+      "type": "string"
+    },
+    "departmentHead": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "creationDate",
+    "departmentHead",
+    "id",
+    "name"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "salary": {
+      "type": "number"
+    },
+    "department": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "address": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "joiningDate": {
+      "type": "string"
+    },
+    "yearlyBonusPercentage": {
+      "type": "number"
+    },
+    "reportingManager": {
+      "type": "object",
+      "properties": {
+        "empId": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "empId"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "dob",
+    "salary",
+    "department",
+    "address",
+    "role",
+    "joiningDate",
+    "yearlyBonusPercentage",
+    "reportingManager"
+  ]
+}
