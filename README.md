@@ -28,6 +28,8 @@ API Endpoints
 
 9.Expand Employees under Departments : GET /api/department/{departmentId}?expand=employee
 
+10.List Employee Name and ID : GET /api/employee/lookup?lookup=true&pageNo=0
+
 
 
 
