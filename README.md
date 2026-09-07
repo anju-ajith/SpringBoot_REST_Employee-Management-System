@@ -26,6 +26,9 @@ API Endpoints
 
 8.Fetch All Department : GET /api/department?pageNo=0&pageSize=20 
 
+9.Expand Employees under Departments : GET /api/department/{departmentId}?expand=employee
+
+
 
 
 
