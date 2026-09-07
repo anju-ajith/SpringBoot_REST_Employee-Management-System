@@ -48,6 +48,12 @@ schemas/
 
 7.error-response.json
 
+DB Scripts
+
+database/schema.sql
+
+
+
 
 
 
