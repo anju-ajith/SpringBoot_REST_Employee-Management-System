@@ -98,6 +98,13 @@ public class DepartmentServiceImpl implements DepartmentService {
 	@Override
 	public void deleteDepartmentById(int dptId) {
 		// TODO Auto-generated method stub
+		  Department department = depRepo.findById(dptId)
+		            .orElseThrow(() ->
+		                    new ResourceNotFoundException(
+		                            "Department not found with id: " + dptId
+		                    )
+		            );
+		
 		boolean employeesExist = empRepo.existsByDepartment_Id(dptId);
 		if (employeesExist) {
 			throw new RuntimeException("Cannot delete department. Employees are assigned to this department.");
