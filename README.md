@@ -11,7 +11,20 @@ Base URL : http://localhost:8084/api
 API Endpoints 
 
 1.Create Employee : POST /api/employees
-2.
+
+2.Update Employee : PUT /api/employees/{employeeId}
+
+3.Add Department  : POST /api/department
+
+4.Delete Department : DELETE /api/department/{departmentId}
+
+5.Update Department : PUT /api/department/{departmentId}
+
+6.Update Employee's Department : PUT api/employee/{employeeId}/department/8
+
+
+
+
 
 
 
