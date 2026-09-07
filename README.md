@@ -20,7 +20,11 @@ API Endpoints
 
 5.Update Department : PUT /api/department/{departmentId}
 
-6.Update Employee's Department : PUT api/employee/{employeeId}/department/8
+6.Update Employee's Department : PUT api/employee/{employeeId}/department/{departmentId}
+
+7.Fetch All Employees : GET  /api/employees?pageNo=0&pageSize=20
+
+8.Fetch All Department : GET /api/department?pageNo=0&pageSize=20 
 
 
 
