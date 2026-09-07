@@ -4,7 +4,7 @@ A RESTful Employee Management System built using Java, Spring Boot, Spring Data 
 
 Technologies
 
-Java 17,Spring Boot,Spring Data JPA,MySQL,Maven,Postman
+Java 17,Spring Boot,Spring Data JPA,MySQL,Maven,Postman,Eclipse
 
 Base URL : http://localhost:8084/api
 
@@ -29,6 +29,28 @@ API Endpoints
 9.Expand Employees under Departments : GET /api/department/{departmentId}?expand=employee
 
 10.List Employee Name and ID : GET /api/employee/lookup?lookup=true&pageNo=0
+
+JSON Schemas
+
+schemas/
+
+1.employee-request.json 
+
+2.employee-response.json
+
+3.employee-lookup-response.json 
+
+4.department-request.json 
+
+5.department-response.json 
+
+6.department-expand-response.json 
+
+7.error-response.json
+
+
+
+
 
 
 
