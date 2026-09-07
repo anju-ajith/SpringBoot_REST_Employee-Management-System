@@ -171,7 +171,7 @@ public class DepartmentServiceImpl implements DepartmentService {
 	@Override
 	public DepartmentResponse getDepartment(int dptId) {
 		// TODO Auto-generated method stub
-		Department department = depRepo.findById(dptId).get();
+		Department department = depRepo.findById(dptId).orElseThrow(() -> new ResourceNotFoundException("Department not found with id: " + dptId));
 		DepartmentResponse response = new DepartmentResponse();
 		response.setName(department.getName());
 		response.setCreationDate(department.getCreationDate());
